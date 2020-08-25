@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="navigation-container container">
+            <a class="logo">
+                <img src="https://storage.googleapis.com/zeroshop-cdn/site/img/logo.svg" alt="">
+            </a>
+            <div class="quick-menu">
+                <button class="btn-search">
+                    <img src="./assets/icons/icons8-search.svg" alt="">
+                </button>
+                <button class="btn-cart">
+                    <img src="./assets/icons/icons8-shopping-cart-16.png" alt="">
+                    <small>10 items</small>
+                </button>
+            </div>
+        </div>
+        <div class="main-menu container">
+            <a href="#" class="item">
+                <div class="icon-item">
+                    <img src="./assets/icons/icons8-vegetarian-food-50.png" alt="">
+                </div>
+                <div class="title-item">
+                    Productos nuevos
+                </div>
+            </a>
+            <a href="#" class="item">
+                <div class="icon-item">
+                    <img src="./assets/icons/icons8-salad-50.png" alt="">
+                </div>
+                <div class="title-item">
+                    Verduras
+                </div>
+            </a>
+            <a href="#" class="item">
+                <div class="icon-item">
+                    <img src="./assets/icons/icons8-salad-50.png" alt="">
+                </div>
+                <div class="title-item">
+                    Frutas
+                </div>
+            </a>
+            <a href="#" class="item">
+                <div class="icon-item">
+                    <img src="./assets/icons/icons8-salad-50.png" alt="">
+                </div>
+                <div class="title-item">
+                    Enlatados
+                </div>
+            </a>
+            <a href="#" class="item">
+                <div class="icon-item">
+                    <img src="./assets/icons/icons8-salad-50.png" alt="">
+                </div>
+                <div class="title-item">
+                    Carnes
+                </div>
+            </a>
+            <a href="#" class="item">
+                <div class="icon-item">
+                    <img src="./assets/icons/icons8-salad-50.png" alt="">
+                </div>
+                <div class="title-item">
+                    Snacks
+                </div>
+            </a>
+        </div>
+    </nav>
+    <main>
+        <div class="first-section container">
+            <div class="welcome-message">
+                <h1>Abarrotes entregados rápidamente.</h1>
+                <button>Comenzar a comprar</button>
+            </div>
+            <div class="simple-carousel">
+
+
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide r</div>
+                        <div class="swiper-slide">Slide s</div>
+                        <div class="swiper-slide">Slide a</div>
+                    </div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev">
+                        <img src="./assets/icons/icons8-chevron-left-30.png" alt="">
+                    </div>
+                    <div class="swiper-button-next">
+                        <img src="./assets/icons/icons8-chevron-right-30.png" alt="">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+    <section class="smth">
+
+    </section>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true, 
+            spaceBetween: 20,
+            spaceBetween: 10,
+            // init: false,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+                1324: {
+                    slidesPerView: 4,
+                    spaceBetween: 10,
+                },
+                1924: {
+                    slidesPerView: 4,
+                    spaceBetween: 10,
+                },
+            }
+        });
+    </script>
+</body>
+
+</html>
